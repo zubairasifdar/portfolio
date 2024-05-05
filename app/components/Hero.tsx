@@ -30,10 +30,10 @@ const Hero = () => {
                 <Link id="about" href='/contact' className='bg-slate-800 font-medium rounded-xl text-white px-4 py-3'>
                     Contact Now
                 </Link>
-                <Link href='/' className='border border-slate-800 font-medium rounded-xl px-4 py-3 
+                <Link href='https://drive.google.com/file/d/1sh2o7B1ZwofoewQJjy9Alzw8xZEuEgkW/view' className='border border-slate-800 font-medium rounded-xl px-4 py-3 
                 flex items-center gap-2 justify-between'>
                     <IoMdDownload size={23} color='#1e293b' />
-                    Download CV
+                    Download Resume
                 </Link>
                 <Link href='https://github.com/zubairasifdar'>
                     <FaGithub size={34} color='#1e293b' />

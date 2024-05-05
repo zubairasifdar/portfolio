@@ -75,27 +75,36 @@ const Contact = () => {
                 <h2 className='text-4xl font-black text-slate-800'>
                     <span className='text-2xl font-light'>Best Projects</span>
                 </h2>
-                <div className='mt-5 flex flex-wrap items-center gap-4'>
-                <div className='flex flex-row justify-between gap-16 border border-slate-400 rounded-xl p-6 cursor-pointer'>
+                <div className='mt-5 grid grid-cols-3 gap-6'>
+                    <div className='border border-slate-400 rounded-xl p-6 hover:scale-105 hover:mx-1 transition-[0.3s] cursor-pointer'>
                         <Image 
-                        width={800}
-                        height={500}
+                        width={400}
+                        height={250}
                         src="/hoobank.png"
-                        className='mx-auto rounded-xl'
+                        className='mx-auto rounded-xl max-h-[250px] object-cover'
                         alt="landing_page"
                         />
-                        <div>
-                            <h5 className='text-7xl font-bold mt-3'>
-                                Hoobank Website Preview
-                            </h5>
-                            <p className='max-w-xl mt-3'>
-                                Credits:- JS Mastery YT
-                            </p>
-                            <Link href='/contact' className='border bg-slate-700 text-white rounded-2xl p-6  mt-5 block'>
-                                Request a Website
-                            </Link>
-                        </div>
-                        
+                        <h5 className='text-xl font-semibold mt-3'>
+                            Hoobank Website
+                        </h5>
+                        <p className='max-w-xl'>
+                            Made using React js & Tailwind CSS for faster development process.
+                        </p>
+                    </div>
+                    <div className='border border-slate-400 rounded-xl p-6 hover:scale-105 hover:mx-1 transition-[0.3s] cursor-pointer'>
+                        <Image 
+                        width={400}
+                        height={250}
+                        src="/milleons.png"
+                        className='mx-auto rounded-xl max-h-[250px] object-cover'
+                        alt="landing_page"
+                        />
+                        <h5 className='text-xl font-semibold mt-3'>
+                            Milleons Website
+                        </h5>
+                        <p className='max-w-xl'>
+                            Made using React js & Tailwind CSS for faster development process.
+                        </p>
                     </div>
                 </div>
             </div>

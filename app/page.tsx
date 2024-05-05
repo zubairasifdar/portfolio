@@ -3,6 +3,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Contact from './components/Contact'
 import TopBar from './components/TopBar'
+import ContactMe from './components/ContactMe'
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       <Hero />
       <About />
       <Contact />
+      <ContactMe />
     </>
   )
 }
