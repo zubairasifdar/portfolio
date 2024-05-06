@@ -10,6 +10,9 @@ const Hero = () => {
   return (
     <div className='text-center mt-28'>
         <div className='flex flex-col items-center gap-1'>
+            <div className='border border-slate-300 p-4 rounded-full mb-6'>
+                <Link href='/services' className='flex items-center gap-2'><span className='font-semibold'>&#128293;  Limited Offer</span>50% discount on first client</Link>
+            </div>
             <Image
             width={300}
             height={300}
