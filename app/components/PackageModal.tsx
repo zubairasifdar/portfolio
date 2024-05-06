@@ -1,5 +1,5 @@
-'use client'
 import React from 'react';
+import axios from 'axios';
 
 interface PackageModalProps {
   onClose: () => void;
@@ -9,8 +9,15 @@ interface PackageModalProps {
 
 const PackageModal: React.FC<PackageModalProps> = ({ onClose, price, description }) => {
 
-    const sendPackage = ({price, description}: {price: string, description: string}) => {
-        alert(price)
+    const sendPackage = async ({price, description}: {price: string, description: string}) => {
+        try {
+            const response = await axios.post('https://remotezubairdev.vercel.app/api/package', { price, description });
+            console.log('Package requested successfully:', response.data);
+            // Optionally, you can add logic here to handle success, like showing a message to the user.
+        } catch (error) {
+            console.error('Error requesting package:', error);
+            // Optionally, you can add logic here to handle errors, like showing an error message to the user.
+        }
     }
 
   return (
@@ -37,11 +44,11 @@ const PackageModal: React.FC<PackageModalProps> = ({ onClose, price, description
         <h2 className="text-2xl font-semibold">{price}</h2>
         <p className="mt-4">{description}</p>
         <button
-        onClick={() => sendPackage({ price, description })}
-        className='text-lg mt-6 bg-slate-800 text-white rounded-xl p-3 cursor-pointer'
-      >
-        Request Package
-      </button>
+          onClick={() => sendPackage({ price, description })}
+          className='text-lg mt-6 bg-slate-800 text-white rounded-xl p-3 cursor-pointer'
+        >
+          Request Package
+        </button>
       </div>
     </div>
   );

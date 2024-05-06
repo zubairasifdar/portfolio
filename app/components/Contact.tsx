@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Contact = () => {
   return (
-    <section className='flex items-start justify-between my-16 rounded-3xl p-16 border border-slate-400'>
+    <section className='flex items-center justify-center my-16 rounded-3xl p-16 border border-slate-400'>
         <div className='flex flex-col gap-4'>
             <div>
                 <h2 className='text-4xl font-black text-slate-800'>
@@ -15,20 +15,20 @@ const Contact = () => {
             <div className='flex flex-col justify-between gap-12'>
             <div className=''>
                 <div className='flex justify-between items-center my-3'>
-                <h2 className='text-4xl font-black text-slate-800'>
-                    <span className='text-2xl font-light'>Recent Projects</span>
+                <h2 className='text-xl lg:text-2xl font-black text-slate-800'>
+                    <span className='font-light'>Recent Projects</span>
                 </h2>
                 <Link href='/projects' className='border-slate-300 border p-4 rounded-2xl'>
                     View More
                 </Link>
                 </div>
-                <div className='mt-5 grid grid-cols-3 gap-6'>
-                    <div className='border border-slate-400 rounded-xl p-6 hover:scale-105 hover:mx-1 transition-[0.3s] cursor-pointer'>
+                <div className='mt-5 flex flex-wrap items-center justify-center lg:justify-start gap-6'>
+                    <div className='max-w-[400px] border border-slate-400 rounded-xl p-6 hover:scale-105 hover:mx-1 transition-[0.3s] cursor-pointer'>
                         <Image 
                         width={400}
                         height={250}
                         src="/todo_list.png"
-                        className='mx-auto max-h-[250px]'
+                        className='mx-auto max-h-[210px]'
                         alt="todo_list_project"
                         />
                         <h5 className='text-xl font-semibold mt-3'>
@@ -38,12 +38,12 @@ const Contact = () => {
                             Made using Next js for front end with state management using react useState.
                         </p>
                     </div>
-                    <div className='border border-slate-400 rounded-xl p-6 hover:scale-105 transition-[0.3s] cursor-pointer'>
+                    <div className='max-w-[400px] border border-slate-400 rounded-xl p-6 hover:scale-105 transition-[0.3s] cursor-pointer'>
                         <Image 
                         width={400}
                         height={250}
                         src="/nike_landing_page.png"
-                        className='mx-auto rounded-xl max-h-[250px]'
+                        className='mx-auto rounded-xl max-h-[210px]'
                         alt="nike_landing_page"
                         />
                         <h5 className='text-xl font-semibold mt-3'>
@@ -53,12 +53,12 @@ const Contact = () => {
                             Made using React js for front-end development and UI designed using Figma
                         </p>
                     </div>
-                    <div className='border border-slate-400 rounded-xl p-6 hover:scale-105 hover:mx-1 transition-[0.3s] cursor-pointer'>
+                    <div className='max-w-[400px] border border-slate-400 rounded-xl p-6 hover:scale-105 hover:mx-1 transition-[0.3s] cursor-pointer'>
                         <Image 
                         width={400}
                         height={250}
                         src="/landing_page.png"
-                        className='mx-auto rounded-xl max-h-[250px]'
+                        className='mx-auto rounded-xl max-h-[210px]'
                         alt="landing_page"
                         />
                         <h5 className='text-xl font-semibold mt-3'>

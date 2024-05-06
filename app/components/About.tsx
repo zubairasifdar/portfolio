@@ -5,7 +5,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const About = () => {
   return (
-    <section className='flex items-start justify-between my-16 rounded-3xl p-16 border border-slate-400'>
+    <section className='flex items-start flex-wrap justify-between gap-y-8 my-16 rounded-3xl p-16 border border-slate-400 text-center md:text-start'>
         <div className='flex flex-col gap-6'>
             <div>
                 <h2 className='text-4xl font-black text-slate-800'>
@@ -28,7 +28,7 @@ const About = () => {
                 <h2 className='text-4xl font-black text-slate-800'>
                     <span className='text-2xl font-light'>My Skills</span>
                 </h2>
-                <div className='mt-3 flex flex-wrap items-center gap-4'>
+                <div className='mt-3 flex flex-wrap md:justify-start justify-center items-center gap-4'>
                     <h4 className='border-2 border-blue-600 rounded-full p-2 text-blue-600'>HTML</h4>
                     <h4 className='border-2 border-purple-600 rounded-full p-2 text-purple-600'>React JS</h4>
                     <h4 className='border-2 border-yellow-600 rounded-full p-2 text-yellow-600'>Tailwind CSS</h4>
@@ -42,7 +42,7 @@ const About = () => {
                 <h2 className='text-4xl font-black text-slate-800'>
                     <span className='text-2xl font-light'>My Projects</span>
                 </h2>
-                <div className='mt-3 flex flex-wrap items-center gap-4'>
+                <div className='mt-3 flex flex-wrap md:justify-start justify-center items-center gap-4'>
                     <h4 className='border border-slate-400 rounded-full p-4 font-semibold text-slate-700'>Todo List</h4>
                     <h4 className='border border-slate-400 rounded-full p-4 font-semibold text-slate-700'>Mileons Website</h4>
                     <h4 className='border border-slate-400 rounded-full p-4 font-semibold text-slate-700'>Portfolio</h4>
